@@ -19,6 +19,12 @@ defmodule IexLineBotWeb.Router do
     get "/", PageController, :index
   end
 
+  scope "/", IexLineBotWeb do
+    pipe_through :api
+
+    post "/", PageController, :line
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", IexLineBotWeb do
   #   pipe_through :api
