@@ -9,6 +9,17 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
+## Getting started
+
+```bash
+git clone https://github.com/pastleo/iex_line_bot.git
+cd iex_line_bot
+cp config/dev.secret.exs.example config/dev.secret.exs
+vim config/dev.secret.exs # get your line access token from line developer console
+mix deps.get
+iex -S mix phx.server
+```
+
 ## Learn more
 
   * Official website: http://www.phoenixframework.org/
